@@ -34,7 +34,7 @@ jobs:
         api_key: ${{secrets.DD_API_KEY}}
         app_key: ${{secrets.DD_APP_KEY}}
         test_search_query: 'tag:e2e-tests' #Modify this tag to suit your tagging strategy
-            - name: Upload a Build Artifact
+       _name: Upload a Build Artifact
   uses: actions/upload-artifact@v7.0.1
   with:
     # Artifact name. If the `archive` input is `false`, the name of the file uploaded will be the artifact name.
@@ -68,7 +68,7 @@ jobs:
     mirror: # optional
     # The token used as Authorization header when fetching from the mirror
     mirror-token: # optional
-          The desired behavior if no files are found using the provided path.
+    # The desired behavior if no files are found using the provided path.
 Available Options:
   warn: Output a warning but do not fail the action
   error: Fail the action with an error message
